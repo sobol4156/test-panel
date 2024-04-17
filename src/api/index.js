@@ -131,7 +131,7 @@ const useApiFetch = () => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
-        const jsonData = await response.json();
+        
         setData(prodData);
       } catch (error:any) {
         setError(error);
