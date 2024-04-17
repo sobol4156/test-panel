@@ -7,7 +7,7 @@ const useApiFetch = () => {
   const [data, setData] = useState<Question | []>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const prodData = [
+  const prodData:any = [
     {
       "type": "single-choice",
       "question": "Какой из нижеперечисленных методов преобразует строку в целое число в JavaScript?",
@@ -18,7 +18,7 @@ const useApiFetch = () => {
         "toFixed()"
       ],
       "correctAnswer": "parseInt()",
-      "id": "1"
+      "id": 1
     },
     {
       "type": "single-choice",
@@ -30,7 +30,7 @@ const useApiFetch = () => {
         "NaN"
       ],
       "correctAnswer": "object",
-      "id": "2"
+      "id": 2
     },
     {
       "type": "multiple-choice",
@@ -45,7 +45,7 @@ const useApiFetch = () => {
         "Переменные могут быть объявлены с помощью ключевого слова var.",
         "Переменные, объявленные с помощью let, имеют блочную область видимости."
       ],
-      "id": "3"
+      "id": 3
     },
     {
       "type": "multiple-choice",
@@ -60,67 +60,67 @@ const useApiFetch = () => {
         "string",
         "function"
       ],
-      "id": "4"
+      "id": 4
     },
     {
       "type": "short-answer",
       "question": "Что делает метод 'reduce()' в JavaScript?",
       "correctAnswer": "",
-      "id": "5"
+      "id": 5
     },
     {
       "type": "short-answer",
       "question": "Что означает термин 'hoisting' в JavaScript?",
       "correctAnswer": "",
-      "id": "6"
+      "id": 6
     },
     {
       "type": "short-answer",
       "question": "Что такое замыкание (closure) в JavaScript?",
       "correctAnswer": "",
-      "id": "7"
+      "id": 7
     },
     {
       "type": "short-answer",
       "question": "Что делает метод 'map()' в JavaScript?",
       "correctAnswer": "",
-      "id": "8"
+      "id": 8
     },
     {
       "type": "long-answer",
       "question": "Расскажите о принципах работы и особенностях замыканий (closures) в JavaScript.",
       "correctAnswer": "",
-      "id": "9"
+      "id": 9
     },
     {
       "type": "long-answer",
       "question": "Что такое DOM (Document Object Model) в JavaScript и как он используется?",
       "correctAnswer": "",
-      "id": "10"
+      "id": 10
     },
     {
       "type": "long-answer",
       "question": "Как работает асинхронное программирование в JavaScript, и какие инструменты предоставляет JavaScript для работы с асинхронным кодом?",
       "correctAnswer": "",
-      "id": "11"
+      "id": 11
     },
     {
       "type": "short-answer",
       "question": "Что означает термин 'hoisting' в JavaScript?",
       "correctAnswer": "",
-      "id": "12"
+      "id": 12
     },
     {
       "type": "short-answer",
       "question": "Что такое замыкание (closure) в JavaScript?",
       "correctAnswer": "",
-      "id": "13"
+      "id": 13
     },
     {
       "type": "short-answer",
       "question": "Что делает метод 'map()' в JavaScript?",
       "correctAnswer": "",
-      "id": "14"
+      "id": 14
     }
   ]
   useEffect(() => {
